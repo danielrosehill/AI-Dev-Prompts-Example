@@ -8,11 +8,15 @@ Welcome to a deep dive into the world of AI code generation prompts, where we ex
 
 The purpose of this exploration is to provide insights into the sample prompts used to create a Python GUI, as detailed in the [Docs-Grabber project](https://github.com/danielrosehill/Docs-Grabber). While the field of AI and prompt engineering evolves rapidly, these techniques represent a snapshot of effective prompting strategies at this time.
 
+---
+
 ## Key Techniques in Prompting
 
 ### 1. Record Your Prompts Meticulously
 
 I make it a point to meticulously record every single prompt, not just the development prompts but also all subsequent debugging prompts and UI editing prompts. I prefer to keep these organized in separate folders to maintain clarity and ease of access.
+
+---
 
 ### 2. File and Folder Naming for RAG (Retrieval-Augmented Generation)
 
@@ -22,16 +26,29 @@ Naming files and folders with precision is crucial for retrieval-augmented gener
 - **debugging/**: Stores prompts used for debugging purposes.
 - **ui-edits/**: Holds prompts for UI editing tasks.
 
+---
+
 ### 3. Drop in Prompts as Context
 
-Utilize chat UIs by providing prompts as context, streamlining the debugging and development process.
+The very easy way to use prompts in chat UIs is to simply provide them as context in the UI itself. For example:
+
+"We need to debug this Python app. See `your-file.md` for detailed instructions."
+
+---
 
 ### 4. Pair System Prompts with User Prompts
 
-Leveraging system prompting can streamline agentic interactions, especially when repositories contain markdown prompts. This approach has been effective in tools like Roo Code. Here are some examples:
+Leveraging system prompting can streamline agentic interactions, especially when repositories contain markdown prompts. This approach has been effective in tools like Roo Code. For example, create modes for development from prompts, debugging from prompts, or editing from prompts. Then, write a mode prompt for each mode along these lines:
+
+- **For initiation**: "You are a helpful programming sidekick whose purpose is to help me to generate a Python program from scratch. In the repository, you will find a development prompt in the following folder: /docs/devprompt.md. Take this as your initial instruction and immediately begin developing the project."
+
+- **For debugging**: "You are a helpful programming assistant whose purpose is to help me to debug applications. In this repository, you will find a folder of markdown files at the following location /docs/debugging. Find the highest numbered version in this folder. For example, if there is round1.md and round2.md, take round2.md to be your instruction. Proceed according to its directives."
 
 - **UI Fixes**: "You are a helpful assistant tasked with improving the user interface. Refer to the `ui-edits` folder for guidance."
+
 - **Security Review**: "Conduct a security review using the guidelines in `security-prompts.md`."
+
+---
 
 ### 5. Be Modular
 
@@ -39,6 +56,8 @@ While AI tools are powerful, they have limitations. Being modular in task execut
 
 - **Effective Prompt**: "Refactor the login module to enhance security."
 - **Ineffective Prompt**: "Refactor the entire application for security, UI, and performance optimizations."
+
+---
 
 ## Favorite AI Code Generation Tools
 
@@ -51,6 +70,10 @@ At the time of writing, these are the tools I'm using for AI code generation:
 
 Additionally, I'm using **OpenRouter** for API access to a wide variety of models. Although it struggles with agentic capabilities, **Qwen's coder models** are some of my favorites for coding projects due to their efficiency and accuracy.
 
+---
+
 ## Conclusion
 
 As the landscape of AI and prompt engineering continues to evolve, these insights and tools serve as a foundation for effective AI-driven development. Whether you're exploring new IDEs or refining your prompting techniques, the journey is as dynamic as the technology itself.
+
+---
