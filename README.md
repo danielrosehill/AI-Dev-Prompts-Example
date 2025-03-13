@@ -4,23 +4,48 @@
 
 ![alt text](banner.webp)
 
- The purpose of this repository is to provide a few sample prompts used in order to create a simple Python GUI for the Linux desktop [project](https://github.com/danielrosehill/Docs-Grabber).
+## Table of Contents
 
- I created this repository and wrote these prompts on March 13th, 2025. The evolution of AI and the art of prompt engineering are both so fast that these techniques will likely be deprecated as agentic IDEs develop progressively better internal prompting structures and models get better at facilitating this kind of use. 
+- [Introduction](#introduction)
+- [Code Example](#code-example)
+- [Projects](#projects)
+- [Prompting Techniques](#prompting-techniques)
+- [Favorite AI Code Generation Tools](#favorite-ai-code-generation-tools)
 
- Nevertheless, I chose to share them because they represent a mode of prompting for GUI creation that I found particularly effective. 
+## Introduction
 
- The key constituent elements are as follows:
+The purpose of this repository is to provide a few sample prompts used in order to create a simple Python GUI for the Linux desktop [project](https://github.com/danielrosehill/Docs-Grabber).
 
- # 1: Record your prompts!
+I created this repository and wrote these prompts on March 13th, 2025. The evolution of AI and the art of prompt engineering are both so fast that these techniques will likely be deprecated as agentic IDEs develop progressively better internal prompting structures and models get better at facilitating this kind of use. 
 
- Agentic IDE tools usually work by providing a convenient sidebar to model the experience of typing into a chat UI that countless people are familiar with.
+Nevertheless, I chose to share them because they represent a mode of prompting for GUI creation that I found particularly effective. 
 
- This makes it extremely tempting to just write casual prompts into the chat bot and quickly forget about them. 
+## Code Example
 
- However, there is a lot of value in resisting this temptation and writing more detailed prompts and also recording them as artifacts in their repository itself:
+You can find the actual code example for the Python GUI in the [docs_grabber.py](./code/docs_grabber.py) file located in the `code` folder.
 
- 1) Repository mobility: Detailed code generation prompts and debugging instructions take time and consideration to author effectively. If you're working in a collaborative coding environment, or you are simply using a number of development tools, writing out the prompts makes it much easier to move between different IDEs. Given the up and down state of many of the development tools at the moment, it makes sense to keep this portability in mind.
+## Projects
+
+Here are the projects mentioned in this repository:
+
+- [Docs-Grabber](https://github.com/danielrosehill/Docs-Grabber)
+- [RooCode](https://example.com/roocode)
+- [Windsurf](https://example.com/windsurf)
+- [Cline](https://example.com/cline)
+
+## Prompting Techniques
+
+The key constituent elements are as follows:
+
+# 1: Record your prompts!
+
+Agentic IDE tools usually work by providing a convenient sidebar to model the experience of typing into a chat UI that countless people are familiar with.
+
+This makes it extremely tempting to just write casual prompts into the chat bot and quickly forget about them. 
+
+However, there is a lot of value in resisting this temptation and writing more detailed prompts and also recording them as artifacts in their repository itself:
+
+1) Repository mobility: Detailed code generation prompts and debugging instructions take time and consideration to author effectively. If you're working in a collaborative coding environment, or you are simply using a number of development tools, writing out the prompts makes it much easier to move between different IDEs. Given the up and down state of many of the development tools at the moment, it makes sense to keep this portability in mind.
 
 2) Prompt reuse and versioning: You'll frequently find that you reuse the same snippets in many prompts. This can be handled by using snippets.  A good way to speed up the population of an effective prompting library is to simply record your prompts in the individual repositories. Note: I will freely admit that I have very mixed feelings about the utility of formalizing prompt libraries. 
 
@@ -76,7 +101,7 @@ Although AI tools are fast maturing and incredibly impressive and powerful, they
 
 At the time of writing, one of the main limitations for code generation and code editing projects is the sheer context load posed on large language models by the number of characters contained in your average code base. 
 
-While technologies like caching and selective context injection can mitigate against these limitations to some extent, they remain imerfect solutions. 
+While technologies like caching and selective context injection can mitigate against these limitations to some extent, they remain imperfect solutions.
 
 For now, those of us who use LLMs for this purpose frequently have to make do with our own hacks that we develop on the go. 
 
@@ -87,3 +112,14 @@ I'm frequently tempted to write a long prompt which will ask a model to provide 
 In practice, it's much more effective to limit your prompts to one or perhaps three very short tasks at a time. 
 
 This prompting model pairs nicely with the default design of tools like Cline, Roo Code, and Windsurf which are built with precisely this kind of workflow in mind.
+
+## Favorite AI Code Generation Tools
+
+At the time of writing, these are the tools I'm using for AI code generation:
+
+- **OpenHands**: A versatile tool for AI-driven development.
+- **Windsurf IDE**: An integrated development environment tailored for AI projects.
+- **Sonnet 3.7**: Known for its robust performance in AI applications.
+- **Aider**: A tool that complements AI development with additional insights.
+
+Additionally, I'm using **OpenRouter** for API access to a wide variety of models. Although it struggles with agentic capabilities, **Qwen's coder models** are some of my favorites for coding projects due to their efficiency and accuracy.
