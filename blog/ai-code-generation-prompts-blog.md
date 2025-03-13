@@ -1,45 +1,20 @@
-# AI Code Generation Prompts Examples (Python)
+# Exploring AI Code Generation Prompts: A Journey with Python
 
-*13-Mar-25*
+**Date:** March 13, 2025
 
-![alt text](banner.webp)
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Code Example](#code-example)
-- [Projects](#projects)
-- [Prompting Techniques](#prompting-techniques)
-- [Favorite AI Code Generation Tools](#favorite-ai-code-generation-tools)
+Welcome to a deep dive into the world of AI code generation prompts, where we explore the techniques and tools that have shaped my journey in developing a simple Python GUI for the Linux desktop.
 
 ## Introduction
 
-The purpose of this repository is to provide a few sample prompts used in order to create a simple Python GUI for the Linux desktop [project](https://github.com/danielrosehill/Docs-Grabber).
+The purpose of this exploration is to provide insights into the sample prompts used to create a Python GUI, as detailed in the [Docs-Grabber project](https://github.com/danielrosehill/Docs-Grabber). While the field of AI and prompt engineering evolves rapidly, these techniques represent a snapshot of effective prompting strategies at this time.
 
-I created this repository and wrote these prompts on March 13th, 2025. The evolution of AI and the art of prompt engineering are both so fast that these techniques will likely be deprecated as agentic IDEs develop progressively better internal prompting structures and models get better at facilitating this kind of use.
+## Key Techniques in Prompting
 
-Nevertheless, I chose to share them because they represent a mode of prompting for GUI creation that I found particularly effective.
-
-## Code Example
-
-You can find the actual code example for the Python GUI in the [docs_grabber.py](./code/docs_grabber.py) file located in the `code` folder.
-
-## Projects
-
-Here are the projects mentioned in this repository:
-
-- [Docs-Grabber](https://github.com/danielrosehill/Docs-Grabber)
-- [RooCode](https://example.com/roocode)
-- [Windsurf](https://example.com/windsurf)
-- [Cline](https://example.com/cline)
-
-## Prompting Techniques
-
-### Record Your Prompts Meticulously
+### 1. Record Your Prompts Meticulously
 
 I make it a point to meticulously record every single prompt, not just the development prompts but also all subsequent debugging prompts and UI editing prompts. I prefer to keep these organized in separate folders to maintain clarity and ease of access.
 
-### File and Folder Naming for RAG (Retrieval-Augmented Generation)
+### 2. File and Folder Naming for RAG (Retrieval-Augmented Generation)
 
 Naming files and folders with precision is crucial for retrieval-augmented generation (RAG). This practice enhances the ability of large language models to navigate and understand code bases efficiently. Here's a model folder structure that I find effective:
 
@@ -47,14 +22,18 @@ Naming files and folders with precision is crucial for retrieval-augmented gener
 - **debugging/**: Stores prompts used for debugging purposes.
 - **ui-edits/**: Holds prompts for UI editing tasks.
 
-### Pair System Prompts with User Prompts
+### 3. Drop in Prompts as Context
+
+Utilize chat UIs by providing prompts as context, streamlining the debugging and development process.
+
+### 4. Pair System Prompts with User Prompts
 
 Leveraging system prompting can streamline agentic interactions, especially when repositories contain markdown prompts. This approach has been effective in tools like Roo Code. Here are some examples:
 
 - **UI Fixes**: "You are a helpful assistant tasked with improving the user interface. Refer to the `ui-edits` folder for guidance."
 - **Security Review**: "Conduct a security review using the guidelines in `security-prompts.md`."
 
-### Be Modular
+### 5. Be Modular
 
 While AI tools are powerful, they have limitations. Being modular in task execution—focusing on one or a few tasks at a time—yields better results and aligns with the design of tools like Cline, Roo Code, and Windsurf. Here are some examples:
 
